@@ -18,9 +18,10 @@
     [super viewDidLoad];
     
     UITextView *textFiled = [[UITextView alloc] initWithFrame:CGRectMake(10, 100, 300, 100)];
-    textFiled.backgroundColor = [UIColor grayColor];
-    textFiled.placeholder = @"444444";
-    textFiled.placeholderColor = [UIColor redColor];
+    textFiled.layer.borderWidth = 0.5;
+    textFiled.layer.borderColor = [UIColor grayColor].CGColor;
+    textFiled.placeholder = @"请输入您的意见反馈";
+    textFiled.placeholderColor = [UIColor colorWithRed:175.0f/255.0f green:175.0f/255.0f blue:175.0f/255.0f alpha:1];
     textFiled.maxInputLength = 30;
     [self.view addSubview:textFiled];
     NSLog(@"%@",textFiled.placeholder);
