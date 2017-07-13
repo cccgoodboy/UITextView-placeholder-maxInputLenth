@@ -49,6 +49,10 @@ static UILabel *placeholderLabel;
     if (self.hasText) {
         return;
     }
+    /**
+     placeholder文字的绘制情况跟自身的font text 属性相关，
+     所以要重写set方法去调用drawRect方法（setNeedsDisplay）
+     **/
     NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
     attrs[NSFontAttributeName] = self.font;
     attrs[NSForegroundColorAttributeName] = self.placeholderColor==nil?[UIColor blackColor]:self.placeholderColor;
