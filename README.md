@@ -1,1 +1,2 @@
 # UITextView-placeholder-maxInputLenth
+# 使用时将textView的分类文件导入功能内引用即可，分类将placeholder和maxInputLenth添加为属性，详细使用方法参照demo
