@@ -50,16 +50,13 @@ static UILabel *placeholderLabel;
         return;
     }
     /**
-     placeholder文字的绘制情况跟自身的font text 属性相关，
+     placeholder文字的绘制情况跟自身的text 属性相关，
      所以要重写set方法去调用drawRect方法（setNeedsDisplay）
      **/
-    NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
-    attrs[NSFontAttributeName] = self.font;
-    attrs[NSForegroundColorAttributeName] = self.placeholderColor==nil?[UIColor blackColor]:self.placeholderColor;
     rect.origin.x = 5;
     rect.origin.y = 8;
     rect.size.width -= 2 * rect.origin.x;
-    [self.placeholder drawInRect:rect withAttributes:attrs];
+    [self.placeholder drawInRect:rect withAttributes:self.placeholderAttributes];
 }
 - (instancetype)ccc_initWithFrame:(CGRect)frame{
     [self ccc_initWithFrame:frame];
@@ -81,8 +78,8 @@ static UILabel *placeholderLabel;
     objc_setAssociatedObject(self, &placeholderKey, placeholder, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     [self setNeedsDisplay];
 }
-- (void)setPlaceholderColor:(UIColor *)placeholderColor{
-    objc_setAssociatedObject(self, &placeholderColorKey, placeholderColor, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+- (void)setPlaceholderAttributes:(NSDictionary *)placeholderAttributes{
+    objc_setAssociatedObject(self, &placeholderColorKey, placeholderAttributes, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     [self setNeedsDisplay];
 }
 - (void)setMaxInputLength:(NSInteger)maxInputLength{
@@ -95,7 +92,7 @@ static UILabel *placeholderLabel;
 - (NSString *)placeholder{
     return objc_getAssociatedObject(self, &placeholderKey);
 }
-- (UIColor *)placeholderColor{
+- (NSDictionary *)placeholderAttributes{
     return objc_getAssociatedObject(self, &placeholderColorKey);
 }
 - (UILabel *)placehoderLabel{

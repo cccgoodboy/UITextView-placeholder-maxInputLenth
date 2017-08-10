@@ -16,7 +16,7 @@
 /**
  textView placeholder textColor
  */
-@property (nonatomic ,strong)UIColor *placeholderColor;
+@property (nonatomic ,strong)NSDictionary *placeholderAttributes;
 /**
  the max inputLenth
  */
