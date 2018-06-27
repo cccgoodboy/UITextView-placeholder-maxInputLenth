@@ -21,4 +21,5 @@
  the max inputLenth
  */
 @property (nonatomic ,assign)NSInteger maxInputLength;
+@property (nonatomic ,assign)NSInteger edgeInsetLeft;
 @end

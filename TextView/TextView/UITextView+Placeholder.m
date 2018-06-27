@@ -12,6 +12,7 @@ static const char placeholderKey = '\3';
 static const char placeholderColorKey = '\4';
 static const char placeholderLabelKey = '\5';
 static const char maxInputLengthKey = '\6';
+static const char edgeInsetKey = '\7';
 static UILabel *placeholderLabel;
 @implementation UITextView (Placeholder)
 
@@ -53,7 +54,7 @@ static UILabel *placeholderLabel;
      placeholder文字的绘制情况跟自身的text 属性相关，
      所以要重写set方法去调用drawRect方法（setNeedsDisplay）
      **/
-    rect.origin.x = 5;
+    rect.origin.x = self.edgeInsetLeft;
     rect.origin.y = 8;
     rect.size.width -= 2 * rect.origin.x;
     [self.placeholder drawInRect:rect withAttributes:self.placeholderAttributes];
@@ -85,6 +86,13 @@ static UILabel *placeholderLabel;
 - (void)setMaxInputLength:(NSInteger)maxInputLength{
     objc_setAssociatedObject(self, &maxInputLengthKey, @(maxInputLength), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
+- (void)setEdgeInsetLeft:(NSInteger)edgeInsetLeft{
+    objc_setAssociatedObject(self, &edgeInsetKey, @(edgeInsetLeft), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+- (NSInteger)edgeInsetLeft{
+    NSNumber *number = objc_getAssociatedObject(self, &edgeInsetKey);
+    return number.integerValue;
+}
 - (NSInteger)maxInputLength{
     NSNumber *inputNumber = objc_getAssociatedObject(self, &maxInputLengthKey);
     return inputNumber.integerValue;
@@ -95,6 +103,7 @@ static UILabel *placeholderLabel;
 - (NSDictionary *)placeholderAttributes{
     return objc_getAssociatedObject(self, &placeholderColorKey);
 }
+
 - (UILabel *)placehoderLabel{
     return objc_getAssociatedObject(self, &placeholderLabelKey);
 }
