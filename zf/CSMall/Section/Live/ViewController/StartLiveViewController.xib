@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartLiveViewController" customModule="DragonVein" customModuleProvider="target">
+            <connections>
+                <outlet property="address" destination="ghi-oQ-fvO" id="mAT-3H-GX2"/>
+                <outlet property="labelBtn" destination="h2N-Wr-1fp" id="jUL-G4-W23"/>
+                <outlet property="liveTitle" destination="Jwx-vG-5DX" id="Yn8-Jd-5Ng"/>
+                <outlet property="startButton" destination="sDB-lM-x3t" id="lev-Vt-e4K"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghi-oQ-fvO">
+                    <rect key="frame" x="15" y="29.5" width="71" height="25"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="上海市" image="zhibodingwei">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled" image="zhibodingwei"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2l-2a-auJ">
+                    <rect key="frame" x="114" y="31.5" width="92" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" image="shangchuanfengmian"/>
+                    <state key="highlighted" image="shangchuanfengmian-on"/>
+                    <connections>
+                        <action selector="uploadCoverButtonAction:" destination="-1" eventType="touchUpInside" id="ziL-fN-dWU"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxG-d0-Zxv">
+                    <rect key="frame" x="286" y="32" width="20" height="20"/>
+                    <state key="normal" backgroundImage="zhiboguanbi-on"/>
+                    <connections>
+                        <action selector="backAtion:" destination="-1" eventType="touchUpInside" id="BbP-p6-5KS"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDB-lM-x3t">
+                    <rect key="frame" x="15" y="387.5" width="290" height="50"/>
+                    <state key="normal" image="kaishizhibo"/>
+                    <connections>
+                        <action selector="startLiveButtonAction:" destination="-1" eventType="touchUpInside" id="wBW-kE-RuQ"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5AN-Ek-Ude">
+                    <rect key="frame" x="15" y="332.5" width="290" height="40"/>
+                    <subviews>
+                        <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGy-FI-akP">
+                            <rect key="frame" x="0.0" y="0.0" width="57.5" height="40"/>
+                            <state key="normal" image="zhibopengyouquan"/>
+                            <state key="selected" image="zhibopengyouquan-on"/>
+                            <connections>
+                                <action selector="shareButonAction:" destination="-1" eventType="touchUpInside" id="k59-BN-WdH"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xkc-ax-3Oh">
+                            <rect key="frame" x="57.5" y="0.0" width="58" height="40"/>
+                            <state key="normal" image="zhiboqq"/>
+                            <state key="selected" image="zhiboqq-on"/>
+                            <connections>
+                                <action selector="shareButonAction:" destination="-1" eventType="touchUpInside" id="ADL-mG-TKa"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQv-tu-TqZ">
+                            <rect key="frame" x="115.5" y="0.0" width="58.5" height="40"/>
+                            <state key="normal" image="zhiboweixin"/>
+                            <state key="selected" image="zhiboweixin-on"/>
+                            <connections>
+                                <action selector="shareButonAction:" destination="-1" eventType="touchUpInside" id="lcz-7s-xZZ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dzb-tQ-5wq">
+                            <rect key="frame" x="174" y="0.0" width="58" height="40"/>
+                            <state key="normal" image="zhiboweibo"/>
+                            <state key="selected" image="zhiboweibo-on"/>
+                            <connections>
+                                <action selector="shareButonAction:" destination="-1" eventType="touchUpInside" id="z1u-iR-LPp"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="104" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fk5-Va-FA5">
+                            <rect key="frame" x="232" y="0.0" width="58" height="40"/>
+                            <state key="normal" image="zhiboqzone"/>
+                            <state key="selected" image="zhiboqzone-on"/>
+                            <connections>
+                                <action selector="shareButonAction:" destination="-1" eventType="touchUpInside" id="odO-d8-u1s"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="fk5-Va-FA5" firstAttribute="width" secondItem="Dzb-tQ-5wq" secondAttribute="width" id="1es-sb-rj0"/>
+                        <constraint firstAttribute="height" constant="40" id="E8e-OG-9md"/>
+                        <constraint firstItem="Xkc-ax-3Oh" firstAttribute="width" secondItem="dGy-FI-akP" secondAttribute="width" id="ayG-en-pzd"/>
+                        <constraint firstItem="Dzb-tQ-5wq" firstAttribute="width" secondItem="mQv-tu-TqZ" secondAttribute="width" id="o3o-Ds-iFH"/>
+                        <constraint firstItem="mQv-tu-TqZ" firstAttribute="width" secondItem="Xkc-ax-3Oh" secondAttribute="width" id="suZ-ht-5GK"/>
+                    </constraints>
+                </stackView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入标题" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jwx-vG-5DX">
+                    <rect key="frame" x="15" y="142.5" width="290" height="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2N-Wr-1fp">
+                    <rect key="frame" x="116.5" y="182.5" width="87" height="33"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="请选择标签">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="labelChoiceButtonAction:" destination="-1" eventType="touchUpInside" id="QSG-yy-2uj"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="h2N-Wr-1fp" firstAttribute="top" secondItem="Jwx-vG-5DX" secondAttribute="bottom" constant="10" id="32d-F4-Jrk"/>
+                <constraint firstItem="N2l-2a-auJ" firstAttribute="centerY" secondItem="ghi-oQ-fvO" secondAttribute="centerY" id="8Qr-Pp-AiK"/>
+                <constraint firstItem="N2l-2a-auJ" firstAttribute="centerY" secondItem="bxG-d0-Zxv" secondAttribute="centerY" id="Cdg-EF-roA"/>
+                <constraint firstItem="h2N-Wr-1fp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DiZ-To-8sL"/>
+                <constraint firstItem="Jwx-vG-5DX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="IIb-Ol-Fym"/>
+                <constraint firstItem="5AN-Ek-Ude" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="Lnl-xM-MLf"/>
+                <constraint firstItem="bxG-d0-Zxv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="32" id="N8F-zA-2WB"/>
+                <constraint firstAttribute="trailing" secondItem="5AN-Ek-Ude" secondAttribute="trailing" constant="15" id="P8X-i3-xn9"/>
+                <constraint firstItem="ghi-oQ-fvO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="QNP-ib-Maa"/>
+                <constraint firstAttribute="trailing" secondItem="bxG-d0-Zxv" secondAttribute="trailing" constant="14" id="QS1-E1-Y9S"/>
+                <constraint firstItem="N2l-2a-auJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="aAC-9i-sqS"/>
+                <constraint firstItem="sDB-lM-x3t" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="ckA-q7-rdH"/>
+                <constraint firstItem="5AN-Ek-Ude" firstAttribute="top" secondItem="Jwx-vG-5DX" secondAttribute="bottom" constant="160" id="lEb-Vd-ZiV"/>
+                <constraint firstItem="Jwx-vG-5DX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="n1U-WH-Lau"/>
+                <constraint firstAttribute="trailing" secondItem="sDB-lM-x3t" secondAttribute="trailing" constant="15" id="w8g-hw-Gre"/>
+                <constraint firstAttribute="trailing" secondItem="Jwx-vG-5DX" secondAttribute="trailing" constant="15" id="zAM-15-TKA"/>
+                <constraint firstItem="sDB-lM-x3t" firstAttribute="top" secondItem="5AN-Ek-Ude" secondAttribute="bottom" constant="15" id="zPY-0A-mJG"/>
+                <constraint firstItem="sDB-lM-x3t" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="bottom" multiplier="455:667" id="zQI-HC-MBb"/>
+            </constraints>
+            <point key="canvasLocation" x="52.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="kaishizhibo" width="345" height="50"/>
+        <image name="shangchuanfengmian" width="92" height="21"/>
+        <image name="shangchuanfengmian-on" width="92" height="21"/>
+        <image name="zhibodingwei" width="22" height="25"/>
+        <image name="zhiboguanbi-on" width="20" height="20"/>
+        <image name="zhibopengyouquan" width="30" height="30"/>
+        <image name="zhibopengyouquan-on" width="30" height="30"/>
+        <image name="zhiboqq" width="30" height="30"/>
+        <image name="zhiboqq-on" width="30" height="30"/>
+        <image name="zhiboqzone" width="30" height="30"/>
+        <image name="zhiboqzone-on" width="30" height="30"/>
+        <image name="zhiboweibo" width="30" height="30"/>
+        <image name="zhiboweibo-on" width="30" height="30"/>
+        <image name="zhiboweixin" width="30" height="30"/>
+        <image name="zhiboweixin-on" width="30" height="30"/>
+    </resources>
+</document>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ConfirHeaderView" customModule="CSMall" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3C8-ZG-OyR">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="fEe-SF-qaB"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moren-2" translatesAutoresizingMaskIntoConstraints="NO" id="bc6-hV-wZY">
+                    <rect key="frame" x="15" y="10.5" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="WgG-yd-GgT"/>
+                        <constraint firstAttribute="width" constant="20" id="dhP-5a-nng"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小馋猫&amp;零食店" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWP-8g-7vl">
+                    <rect key="frame" x="43" y="0.0" width="89" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3C8-ZG-OyR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5Wb-Ej-TCa"/>
+                <constraint firstItem="bc6-hV-wZY" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="FIk-4b-uKE"/>
+                <constraint firstAttribute="bottom" secondItem="tWP-8g-7vl" secondAttribute="bottom" id="MfC-k0-SLQ"/>
+                <constraint firstItem="tWP-8g-7vl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Q4s-L8-QeK"/>
+                <constraint firstAttribute="trailing" secondItem="3C8-ZG-OyR" secondAttribute="trailing" id="bti-Cv-JBt"/>
+                <constraint firstItem="bc6-hV-wZY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="jEc-0w-QNK"/>
+                <constraint firstItem="3C8-ZG-OyR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="o33-Kl-lcC"/>
+                <constraint firstItem="tWP-8g-7vl" firstAttribute="leading" secondItem="bc6-hV-wZY" secondAttribute="trailing" constant="8" id="uSP-Dw-kOV"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="img" destination="bc6-hV-wZY" id="N4j-hL-cJF"/>
+                <outlet property="nameLab" destination="tWP-8g-7vl" id="iBG-uZ-dj4"/>
+            </connections>
+            <point key="canvasLocation" x="51.5" y="196"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="moren-2" width="250" height="250"/>
+    </resources>
+</document>

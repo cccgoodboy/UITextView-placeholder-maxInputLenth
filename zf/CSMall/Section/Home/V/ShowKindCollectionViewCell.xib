@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ShowKindCollectionViewCell" id="gTV-IL-0wX" customClass="ShowKindCollectionViewCell" customModule="CSMall" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="89" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="89" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分类名称" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nc-gX-qnX">
+                        <rect key="frame" x="1" y="1" width="87" height="48"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.39995324611663818" green="0.40002685785293579" blue="0.39994865655899048" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorUIColor">
+                                <color key="value" red="0.79991227388381958" green="0.80005055665969849" blue="0.7999035120010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="6nc-gX-qnX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="1" id="BBe-4v-ijI"/>
+                <constraint firstAttribute="bottom" secondItem="6nc-gX-qnX" secondAttribute="bottom" constant="1" id="Fz8-1W-9fT"/>
+                <constraint firstItem="6nc-gX-qnX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="1" id="gTc-zk-gBC"/>
+                <constraint firstAttribute="trailing" secondItem="6nc-gX-qnX" secondAttribute="trailing" constant="1" id="k05-cQ-fq9"/>
+            </constraints>
+            <size key="customSize" width="89" height="50"/>
+            <connections>
+                <outlet property="kindtitle" destination="6nc-gX-qnX" id="6aR-it-25G"/>
+            </connections>
+            <point key="canvasLocation" x="53.5" y="54"/>
+        </collectionViewCell>
+    </objects>
+</document>

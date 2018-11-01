@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MDWebViewController" customModule="CSMall" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomBtn" destination="zTQ-Nb-6Tg" id="Hbo-gP-lnB"/>
+                <outlet property="bottomBtnheight" destination="XMJ-kN-98V" id="42T-4w-Pwa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="kjL-YQ-Bq9" id="mjj-rc-edB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kjL-YQ-Bq9">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="622"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="sIc-p3-lYe"/>
+                    </connections>
+                </webView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTQ-Nb-6Tg">
+                    <rect key="frame" x="0.0" y="622" width="375" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="XMJ-kN-98V"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="成为卖家"/>
+                    <connections>
+                        <action selector="bottomBtnClick:" destination="-1" eventType="touchUpInside" id="irs-q6-bNE"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zTQ-Nb-6Tg" firstAttribute="top" secondItem="kjL-YQ-Bq9" secondAttribute="bottom" id="GOE-CP-yw3"/>
+                <constraint firstItem="zTQ-Nb-6Tg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="INK-ts-zPP"/>
+                <constraint firstAttribute="bottom" secondItem="zTQ-Nb-6Tg" secondAttribute="bottom" id="aX9-Zr-OuK"/>
+                <constraint firstItem="kjL-YQ-Bq9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ijL-05-3IE"/>
+                <constraint firstAttribute="trailing" secondItem="zTQ-Nb-6Tg" secondAttribute="trailing" id="syY-uz-xWo"/>
+                <constraint firstItem="kjL-YQ-Bq9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xpw-F3-FZh"/>
+                <constraint firstAttribute="trailing" secondItem="kjL-YQ-Bq9" secondAttribute="trailing" id="yeO-K5-SLG"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

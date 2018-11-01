@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EmptyShopView" id="U6b-Vx-4bR" customClass="EmptyShopView" customModule="CSMall" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="292"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There's nothing in the sh" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvA-yn-Edh">
+                    <rect key="frame" x="8" y="91.5" width="304" height="20.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="41" id="aRr-c2-snh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.76803094149999995" blue="0.65064018960000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zco-dZ-dDl">
+                    <rect key="frame" x="0.0" y="242" width="320" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="—   推荐商品   —     " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ows-ac-ivq">
+                            <rect key="frame" x="95" y="15.5" width="130" height="19.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="130" id="Rve-mm-XOe"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90970492362976074" green="0.90986090898513794" blue="0.9096950888633728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Ows-ac-ivq" firstAttribute="centerX" secondItem="Zco-dZ-dDl" secondAttribute="centerX" id="GLG-Hb-ZmD"/>
+                        <constraint firstAttribute="height" constant="50" id="gQf-v8-KYK"/>
+                        <constraint firstItem="Ows-ac-ivq" firstAttribute="centerY" secondItem="Zco-dZ-dDl" secondAttribute="centerY" id="o9t-GD-Lfd"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gouwuche_kong" translatesAutoresizingMaskIntoConstraints="NO" id="SIa-OI-gha">
+                    <rect key="frame" x="0.0" y="112" width="320" height="110"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="110" id="fna-0v-1uY"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="rvA-yn-Edh" secondAttribute="trailing" constant="8" id="3Xt-eu-3rX"/>
+                <constraint firstItem="Zco-dZ-dDl" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="5ma-6p-anw"/>
+                <constraint firstItem="Zco-dZ-dDl" firstAttribute="top" secondItem="SIa-OI-gha" secondAttribute="bottom" constant="20" id="7By-Ab-Lu0"/>
+                <constraint firstAttribute="bottom" secondItem="Zco-dZ-dDl" secondAttribute="bottom" id="8IP-is-tQl"/>
+                <constraint firstItem="SIa-OI-gha" firstAttribute="top" secondItem="rvA-yn-Edh" secondAttribute="bottom" id="DuF-zb-N5w"/>
+                <constraint firstAttribute="trailing" secondItem="Zco-dZ-dDl" secondAttribute="trailing" id="WMy-gY-eFg"/>
+                <constraint firstAttribute="trailing" secondItem="SIa-OI-gha" secondAttribute="trailing" id="lDt-dN-Ou6"/>
+                <constraint firstItem="rvA-yn-Edh" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="8" id="nBX-MQ-2in"/>
+                <constraint firstItem="SIa-OI-gha" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="znE-cI-NeC"/>
+            </constraints>
+            <connections>
+                <outlet property="noLab" destination="rvA-yn-Edh" id="sFo-Zs-jj3"/>
+            </connections>
+            <point key="canvasLocation" x="-19" y="102"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="gouwuche_kong" width="150" height="105"/>
+    </resources>
+</document>

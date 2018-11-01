@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ReimburseFooter" customModule="CSMall" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4dL-WG-8Cp">
+                    <rect key="frame" x="10" y="0.0" width="42" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.99905902150000003" green="0.2288065255" blue="0.2317296267" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXn-zW-E2L">
+                    <rect key="frame" x="285" y="7.5" width="80" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="dhH-am-t89"/>
+                        <constraint firstAttribute="height" constant="26" id="g24-uy-ezO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="查看详情">
+                        <color key="titleColor" red="0.99905902150000003" green="0.2288065255" blue="0.2317296267" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="13"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColorUIColor">
+                            <color key="value" red="0.9988889098" green="0.26584774259999999" blue="0.26713570949999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="detailClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="4b4-UT-hjC"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XtA-yy-4TJ">
+                    <rect key="frame" x="0.0" y="40" width="375" height="5"/>
+                    <color key="backgroundColor" red="0.9371530414" green="0.93731355670000005" blue="0.93714290860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="Mfi-W1-9uA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="XtA-yy-4TJ" secondAttribute="trailing" id="8mE-wK-aSO"/>
+                <constraint firstItem="WXn-zW-E2L" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-2" id="BG6-wL-5WB"/>
+                <constraint firstItem="4dL-WG-8Cp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="TAj-Sq-gJA"/>
+                <constraint firstAttribute="trailing" secondItem="WXn-zW-E2L" secondAttribute="trailing" constant="10" id="bgG-7f-O4S"/>
+                <constraint firstItem="XtA-yy-4TJ" firstAttribute="top" secondItem="4dL-WG-8Cp" secondAttribute="bottom" id="n8v-Qy-vwn"/>
+                <constraint firstItem="4dL-WG-8Cp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="rpp-fE-0I4"/>
+                <constraint firstItem="XtA-yy-4TJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wtZ-iB-12f"/>
+                <constraint firstAttribute="bottom" secondItem="XtA-yy-4TJ" secondAttribute="bottom" id="zvH-76-d68"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="titleLab" destination="4dL-WG-8Cp" id="zqU-hZ-rbi"/>
+            </connections>
+            <point key="canvasLocation" x="70.5" y="159"/>
+        </view>
+    </objects>
+</document>

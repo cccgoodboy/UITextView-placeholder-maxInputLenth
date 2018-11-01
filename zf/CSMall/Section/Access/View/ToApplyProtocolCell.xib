@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="70" id="KGk-i7-Jjw" customClass="ToApplyProtocolCell" customModule="CSMall" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="381" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="381" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxr-Ar-FQW">
+                        <rect key="frame" x="15" y="24" width="100" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="商家入驻协议" image="ruzhushenqing_xieyi">
+                            <color key="titleColor" red="0.0" green="0.44581574201583862" blue="0.81544208526611328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1B-rk-dgb">
+                        <rect key="frame" x="253" y="27" width="118" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <inset key="titleEdgeInsets" minX="-30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="105" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="申请即同意此协议内容" image="ruzhushenqing_xiayiye">
+                            <color key="titleColor" red="0.0" green="0.44581574200000001" blue="0.81544208529999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gxr-Ar-FQW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Ngo-fI-PW3"/>
+                    <constraint firstItem="gxr-Ar-FQW" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Tjz-aX-Mcs"/>
+                    <constraint firstAttribute="trailing" secondItem="S1B-rk-dgb" secondAttribute="trailing" constant="10" id="U7S-hG-7du"/>
+                    <constraint firstItem="S1B-rk-dgb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="tWg-fR-2BC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageTitleBtn" destination="gxr-Ar-FQW" id="6VU-sZ-YcA"/>
+                <outlet property="titleImageBtrn" destination="S1B-rk-dgb" id="2VD-zm-IIS"/>
+            </connections>
+            <point key="canvasLocation" x="-74.5" y="-43"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ruzhushenqing_xiayiye" width="15" height="15"/>
+        <image name="ruzhushenqing_xieyi" width="20" height="20"/>
+    </resources>
+</document>

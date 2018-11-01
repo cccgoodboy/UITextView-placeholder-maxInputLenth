@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ShoppingCollectionViewCell" id="gTV-IL-0wX" customClass="ShoppingCollectionViewCell" customModule="CSMall" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="190" height="260"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="190" height="260"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="现价：￥999.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEm-Ou-fWn">
+                        <rect key="frame" x="8" y="230" width="114" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="cGh-Je-rPK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.88675588369369507" green="0.40047436952590942" blue="0.39357668161392212" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥120.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C79-Gl-qyK">
+                        <rect key="frame" x="122" y="230" width="60" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="JRI-Wb-iMz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.59601163864135742" green="0.59611696004867554" blue="0.59600502252578735" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="现价现价9现价现现价现价价现价现价" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8V-WB-hIp">
+                        <rect key="frame" x="8" y="192" width="174" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="Eva-nW-zMJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.21173727512359619" green="0.21178042888641357" blue="0.2117345929145813" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moren-2" translatesAutoresizingMaskIntoConstraints="NO" id="WyW-Oj-3rV">
+                        <rect key="frame" x="0.0" y="0.0" width="190" height="184"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="C79-Gl-qyK" secondAttribute="bottom" constant="10" id="5ee-eF-HQX"/>
+                <constraint firstItem="C79-Gl-qyK" firstAttribute="top" secondItem="J8V-WB-hIp" secondAttribute="bottom" constant="4" id="9bx-SN-pEJ"/>
+                <constraint firstItem="C79-Gl-qyK" firstAttribute="leading" secondItem="kEm-Ou-fWn" secondAttribute="trailing" id="HJU-2e-9dV"/>
+                <constraint firstAttribute="trailing" secondItem="J8V-WB-hIp" secondAttribute="trailing" constant="8" id="Lc0-9b-uF9"/>
+                <constraint firstItem="kEm-Ou-fWn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="Sap-xV-1eN"/>
+                <constraint firstAttribute="trailing" secondItem="C79-Gl-qyK" secondAttribute="trailing" constant="8" id="WgE-eV-vHd"/>
+                <constraint firstItem="kEm-Ou-fWn" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="6:10" id="ZK6-CA-juf"/>
+                <constraint firstItem="J8V-WB-hIp" firstAttribute="top" secondItem="WyW-Oj-3rV" secondAttribute="bottom" constant="8" id="doD-hl-aIO"/>
+                <constraint firstAttribute="trailing" secondItem="WyW-Oj-3rV" secondAttribute="trailing" id="fOS-ad-9Kb"/>
+                <constraint firstItem="J8V-WB-hIp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="hiQ-bP-Ufs"/>
+                <constraint firstItem="WyW-Oj-3rV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mZJ-bZ-rys"/>
+                <constraint firstItem="WyW-Oj-3rV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="suT-H8-Y70"/>
+                <constraint firstAttribute="bottom" secondItem="kEm-Ou-fWn" secondAttribute="bottom" constant="10" id="vyI-qF-CQE"/>
+            </constraints>
+            <size key="customSize" width="190" height="260"/>
+            <connections>
+                <outlet property="s_img" destination="WyW-Oj-3rV" id="nOQ-x8-ZR8"/>
+                <outlet property="s_oprice" destination="C79-Gl-qyK" id="53Z-e5-pCi"/>
+                <outlet property="s_price" destination="kEm-Ou-fWn" id="9Qz-0B-5F9"/>
+                <outlet property="s_title" destination="J8V-WB-hIp" id="gu0-Jn-Eaj"/>
+            </connections>
+            <point key="canvasLocation" x="104" y="159"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="moren-2" width="100" height="100"/>
+    </resources>
+</document>

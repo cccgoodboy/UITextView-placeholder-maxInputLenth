@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddressVC" customModule="CSMall" customModuleProvider="target">
+            <connections>
+                <outlet property="addressBtn" destination="rkz-jd-OCx" id="j1X-cS-Tv2"/>
+                <outlet property="addressTab" destination="ynN-fs-9RK" id="05U-nh-la3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkz-jd-OCx">
+                    <rect key="frame" x="0.0" y="622" width="375" height="45"/>
+                    <color key="backgroundColor" red="0.18821200730000001" green="0.7639359832" blue="0.65039688350000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="lgh-T7-VU8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="添加新地址"/>
+                    <connections>
+                        <action selector="addAddressClick:" destination="-1" eventType="touchUpInside" id="6o6-0h-jpL"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="ynN-fs-9RK">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="622"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="wb1-C8-y9I"/>
+                        <outlet property="delegate" destination="-1" id="CxW-rv-6gm"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ynN-fs-9RK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5Wp-RS-ppz"/>
+                <constraint firstAttribute="bottom" secondItem="rkz-jd-OCx" secondAttribute="bottom" id="DRh-VT-u2a"/>
+                <constraint firstItem="ynN-fs-9RK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="DZR-Yb-qxw"/>
+                <constraint firstAttribute="trailing" secondItem="rkz-jd-OCx" secondAttribute="trailing" id="hFj-CC-oNg"/>
+                <constraint firstAttribute="trailing" secondItem="ynN-fs-9RK" secondAttribute="trailing" id="jZk-H9-zQB"/>
+                <constraint firstItem="rkz-jd-OCx" firstAttribute="top" secondItem="ynN-fs-9RK" secondAttribute="bottom" id="na7-pr-sZF"/>
+                <constraint firstItem="rkz-jd-OCx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oOe-3x-Syi"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

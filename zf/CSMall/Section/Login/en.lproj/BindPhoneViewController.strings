@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "获取验证码"; ObjectID = "8Qg-DY-GDU"; */
+"8Qg-DY-GDU.normalTitle" = "获取验证码";
+
+/* Class = "UITextField"; placeholder = "请输入验证码"; ObjectID = "BXS-ch-hym"; */
+"BXS-ch-hym.placeholder" = "请输入验证码";
+
+/* Class = "UIButton"; normalTitle = "绑定手机号"; ObjectID = "aNF-B0-cb5"; */
+"aNF-B0-cb5.normalTitle" = "绑定手机号";
+
+/* Class = "UITextField"; placeholder = "请输入手机号"; ObjectID = "gfV-tZ-neX"; */
+"gfV-tZ-neX.placeholder" = "请输入手机号";

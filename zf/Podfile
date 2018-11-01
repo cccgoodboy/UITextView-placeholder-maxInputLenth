@@ -1,0 +1,101 @@
+platform :ios, '9.0'
+use_frameworks!
+target 'CSMall' do
+
+#pod 'SnapKit'
+#pod 'MJRefresh'
+#pod 'Alamofire'
+#pod 'Kingfisher'
+#pod 'MLEmojiLabel'
+#pod 'IQKeyboardManagerSwift'
+#pod 'HandyJSON'
+#pod 'SDWebImage', '~> 4.1.0'
+#pod 'PLMediaStreamingKit'
+#
+#pod 'pili-librtmp'
+#pod 'QNNetDiag'
+#pod 'HappyDNS'
+#pod 'JPush'
+#
+#pod 'LLCycleScrollView'
+
+pod 'PayPal-iOS-SDK'
+#layout
+pod 'SnapKit', '~> 3.2.0'
+#maybe transh
+pod 'MJRefresh', '~> 3.1.12'
+#net
+pod 'Alamofire', '~> 4.5.0'
+pod 'Kingfisher', '~> 3.11.0'
+pod 'MLEmojiLabel', '~> 1.0.2'
+
+#keyboard
+pod 'IQKeyboardManagerSwift', '~> 4.0.11'
+pod 'JPush', '~> 3.0.6'
+
+
+pod 'ESTabBarController-swift', '~> 2.5'
+
+pod 'PLPlayerKit', '~>  2.4.3'
+
+pod 'pili-librtmp'#, '~> 1.0.7'
+pod 'QNNetDiag'#, '~> 0.0.6'
+pod 'HappyDNS'#, '~> 0.3.12'
+
+pod 'SQLite.swift', '~> 0.11.5'
+
+#Umeng
+# U-Share SDK UI模块（分享面板，建议添加）
+pod 'UMengUShare/UI'#, '~> 6.4.5'
+
+# 集成微信(精简版0.2M)
+pod 'UMengUShare/Social/ReducedWeChat'#, '~> 6.4.5'
+
+# 集成QQ(精简版0.5M)
+pod 'UMengUShare/Social/ReducedQQ'#, '~> 6.4.5'
+
+# 集成新浪微博(精简版1M)
+pod 'UMengUShare/Social/ReducedSina'#, '~> 6.4.5'
+pod 'UMengUShare/Social/Facebook'
+#json
+pod 'HandyJSON', '~> 4.2.0'
+#segment
+pod 'HMSegmentedControl', '~> 1.5.4'
+
+
+pod 'Hyphenate', '~> 3.3.9'
+
+
+pod 'PLMediaStreamingKit',:podspec => './PLMediaStreamingKit.podspec’
+
+pod 'SDWebImage', '~> 3.7'
+
+pod 'CWStatusBarNotification', '~> 2.3.5'
+pod 'Bugly'
+pod 'Masonry', '~> 1.1.0'
+pod 'ZFDownload'
+pod 'MWPhotoBrowser', '~> 2.1.2'
+pod 'WechatOpenSDK'
+#pod 'HXWeiboPhotoPicker', '~> 2.1.0'
+#pod 'pili-librtmp'
+#pod 'QNNetDiag'
+#pod 'HappyDNS'
+#pod 'JPush'
+#pod 'LLCycleScrollView'、
+#pod 'AFNetworking', '~> 3.1.0'
+#pod 'BlocksKit', '~> 2.2.5'
+#Installing JCore (1.1.5)
+#Installing TTTAttributedLabel (1.13.4)
+#pod 'HyphenateLite'
+#pod 'QBImagePickerController', '~> 3.4.0'
+#pod 'MJExtension', '~> 3.0.13'
+#pod 'Pingpp/Wx', '~> 2.2.17'
+#pod 'Pingpp/Alipay'
+#pod 'GYDataCenter'
+#pod 'MLEmojiLabel'
+pod 'SwiftyJSON', '~> 4.0'
+end
+
+
+
+

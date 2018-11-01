@@ -1,0 +1,21 @@
+
+/* Class = "UIButton"; normalTitle = "获取验证码"; ObjectID = "6GQ-d6-5i3"; */
+"6GQ-d6-5i3.normalTitle" = "获取验证码";
+
+/* Class = "UIButton"; normalTitle = "注册"; ObjectID = "AYA-2F-JoI"; */
+"AYA-2F-JoI.normalTitle" = "注册";
+
+/* Class = "UITextField"; placeholder = "请输入验证码"; ObjectID = "FxU-aM-M2h"; */
+"FxU-aM-M2h.placeholder" = "请输入验证码";
+
+/* Class = "UIButton"; normalTitle = "忘记密码"; ObjectID = "HVQ-PE-YC0"; */
+"HVQ-PE-YC0.normalTitle" = "忘记密码";
+
+/* Class = "UITextField"; placeholder = "请输入手机号"; ObjectID = "I1T-Vb-b1C"; */
+"I1T-Vb-b1C.placeholder" = "请输入手机号";
+
+/* Class = "UIButton"; normalTitle = "登录即代表同意《用户协议》"; ObjectID = "bav-EP-A0T"; */
+"bav-EP-A0T.normalTitle" = "登录即代表同意《用户协议》";
+
+/* Class = "UIButton"; normalTitle = "登录"; ObjectID = "zJd-tK-jU6"; */
+"zJd-tK-jU6.normalTitle" = "登录";

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MerchantCollectionViewCell" id="gTV-IL-0wX" customClass="MerchantCollectionViewCell" customModule="CSMall" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moren-2" translatesAutoresizingMaskIntoConstraints="NO" id="Pwi-9v-p8n">
+                        <rect key="frame" x="8" y="10" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="GGx-GM-4rT"/>
+                            <constraint firstAttribute="height" constant="70" id="Gnz-dB-06M"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小餐猫零食店" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bdn-1H-MYA">
+                        <rect key="frame" x="86" y="10" width="226" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="RMB-W6-Uew"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTH-Cr-MdG">
+                        <rect key="frame" x="238" y="35" width="74" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="De1-un-YPI"/>
+                            <constraint firstAttribute="width" constant="74" id="tiZ-qd-es3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <inset key="titleEdgeInsets" minX="-30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="进入店铺" image="xiayibu_hei">
+                            <color key="titleColor" red="0.19605264067649841" green="0.19609326124191284" blue="0.19605004787445068" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="月销量：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAh-p5-VpF">
+                        <rect key="frame" x="86" y="65.5" width="45" height="14.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="d6C-Uo-X77"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.60385400060000005" green="0.60396051409999996" blue="0.60384726519999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="月销量月销量：月销量：月销量：：" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Rl-Va-R3T">
+                        <rect key="frame" x="86" y="30" width="148" height="33"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.60385400060000005" green="0.60396051409999996" blue="0.60384726519999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Pwi-9v-p8n" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="CnE-7A-qre"/>
+                <constraint firstItem="Bdn-1H-MYA" firstAttribute="top" secondItem="Pwi-9v-p8n" secondAttribute="top" id="E0q-Sm-ssg"/>
+                <constraint firstItem="oTH-Cr-MdG" firstAttribute="leading" secondItem="7Rl-Va-R3T" secondAttribute="trailing" constant="4" id="LUW-Of-uHK"/>
+                <constraint firstAttribute="trailing" secondItem="oTH-Cr-MdG" secondAttribute="trailing" constant="8" id="O2M-Iy-Db2"/>
+                <constraint firstItem="Pwi-9v-p8n" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="OF4-aS-RXX"/>
+                <constraint firstAttribute="trailing" secondItem="Bdn-1H-MYA" secondAttribute="trailing" constant="8" id="PiU-Fa-aWo"/>
+                <constraint firstItem="7Rl-Va-R3T" firstAttribute="leading" secondItem="Pwi-9v-p8n" secondAttribute="trailing" constant="8" id="bAu-Z0-4Ly"/>
+                <constraint firstItem="7Rl-Va-R3T" firstAttribute="top" secondItem="Bdn-1H-MYA" secondAttribute="bottom" constant="2" id="dNC-1y-ZYX"/>
+                <constraint firstItem="oTH-Cr-MdG" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="h1u-8s-CMs"/>
+                <constraint firstItem="gAh-p5-VpF" firstAttribute="leading" secondItem="Pwi-9v-p8n" secondAttribute="trailing" constant="8" id="jZG-6X-rD6"/>
+                <constraint firstItem="gAh-p5-VpF" firstAttribute="top" secondItem="7Rl-Va-R3T" secondAttribute="bottom" constant="2" id="qE2-Lo-xB3"/>
+                <constraint firstItem="gAh-p5-VpF" firstAttribute="bottom" secondItem="Pwi-9v-p8n" secondAttribute="bottom" id="uc5-4k-7co"/>
+                <constraint firstItem="Bdn-1H-MYA" firstAttribute="leading" secondItem="Pwi-9v-p8n" secondAttribute="trailing" constant="8" id="wzs-vo-Ikb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="317" height="87"/>
+            <connections>
+                <outlet property="desc" destination="7Rl-Va-R3T" id="EgZ-EQ-MdT"/>
+                <outlet property="img" destination="Pwi-9v-p8n" id="ofb-o8-b2M"/>
+                <outlet property="scale" destination="gAh-p5-VpF" id="e4c-Dn-s8J"/>
+                <outlet property="title" destination="Bdn-1H-MYA" id="CNB-DB-eK9"/>
+            </connections>
+            <point key="canvasLocation" x="167" y="106"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="moren-2" width="100" height="100"/>
+        <image name="xiayibu_hei" width="20" height="20"/>
+    </resources>
+</document>
